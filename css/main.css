@@ -1,0 +1,29 @@
+h1,h2,h3,h5,h6,p,ul{margin: 0; padding: 0;
+}
+body{margin: 0; fonts-size: 15px; font-family:cursive;
+}
+a{text-decoration: none;
+}
+header{background: blue; text-align: center; color: white; padding: 3%; margin-bottom: 0.3%;}
+.menubar{background: blue; }
+.menubar ul{display: flex; flex-flow: row wrap; justify-content: flex-end; }
+li{list-style: none;}
+.menubar ul li{ margin: 0 1%; padding: 1%;}
+.menubar ul li a{color: white;}
+.menubar ul li:hover{background: white; }
+.menubar ul li:hover a{color: black;}
+section{background: black; display: flex; padding: 1% 0; justify-content: space-around; }
+.education{background: blue; width: 30%; padding: 1%;}
+.Experience{background: blue; width: 30%; padding: 1%;}
+.contact{background: blue; width: 30%; padding:1%;}
+footer{background: blue; color: white; padding: 2%; margin-top: 0.3%;
+  display: flex; flex-direction: row; justify-content: space-between;}
+.copy{width: 48%; padding: 1%; text-align: left; background: white; color: red;}
+.develop{widht: 48%; padding: 1%; text-align: right; background: white; color: red;}
+@media all and (max-width: 600px){
+  .menubar ul{ flex-flow: column nowrap; }
+  section{ flex-flow: column nowrap;}
+  .education, .Experience, .contact{width: 96%; padding: 2%; margin-bottom: 2%; }
+  footer{flex-flow: column nowrap;}
+  .copy, .develop{ width: 96%; padding: 2%; margin-bottom: 2%; text-align: left;}
+}
